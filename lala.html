@@ -1,11 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profil Diri</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 30px;
+            color: #ff0062;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff0062;
+            margin-bottom: 10px;
+        }
+
+        .garis {
+            width: 80px;
+            height: 4px;
+            background-color: #ff0062;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+        }
+
+        .kotak-profil {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kartu {
+            background-color: white;
+            padding: 22px;
+            border-radius: 14px;
+            border: 1px solid #dbe3f0;
+            box-shadow: 0 4px 12px #0000000d;
+        }
+
+        h2 {
+            color: #ff003c;
+            font-size: 21px;
+            margin-top: 0;
+            border-bottom: 2px solid #ff0062;
+            padding-bottom: 10px;
+        }
+
+        .foto {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ff1e7f;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .data {
+            margin: 14px 0;
+            line-height: 1.5;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #ff0062;
+        }
+
+        ul {
+            padding-left: 22px;
+            line-height: 1.9;
+        }
+
+        .kembali {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #ff0062;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .kembali:hover {
+            background-color: #455a91;
+        }
+
+        .peringatan {
+            background-color: #e8edff;
+            padding: 14px;
+            margin-top: 24px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .kotak-profil {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>helo, titut</h1>
+    <div class="container">
+
+        <h1>Profil Diri</h1>
+        <div class="garis"></div>
+
+        <div class="kotak-profil">
+
+            <!-- KOTAK DATA DIRI -->
+            <div class="kartu">
+                <h2>Data Diri</h2>
+
+                <img src="cimoy.jpeg"
+                     alt="Foto Profil"
+                     class="foto">
+
+                <div class="data">
+                    <span class="label">Nama Lengkap:</span>
+                    Nama Lengkap Kamu
+                </div>
+
+                <div class="data">
+                    <span class="label">Nama Panggilan:</span>
+                    Nama Panggilan Kamu
+                </div>
+
+                <div class="data">
+                    <span class="label">Kelas:</span>
+                    XII PPLG 1
+                </div>
+
+                <div class="data">
+                    <span class="label">Nomor Absen:</span>
+                    15
+                </div>
+
+                <div class="data">
+                    <span class="label">Tempat, Tanggal Lahir:</span>
+                    Isi tempat dan tanggal lahir
+                </div>
+
+                <div class="data">
+                    <span class="label">Kota Asal:</span>
+                    Semarang
+                </div>
+            </div>
+
+            <!-- KOTAK PROFIL -->
+            <div class="kartu">
+                <h2>Profil</h2>
+
+                <p>
+                    Halo! Saya adalah pelajar jurusan PPLG
+                    yang tertarik mempelajari teknologi
+                    dan dunia pemrograman.
+                </p>
+
+                <h3>Hobi</h3>
+                <ul>
+                    <li>Mendengarkan musik</li>
+                    <li>Menonton film</li>
+                </ul>
+
+                <h3>Keahlian / Skill</h3>
+                <ul>
+                    <li>HTML dasar</li>
+                    <li>Mengoperasikan komputer</li>
+                    <li>Pemrograman dasar</li>
+                </ul>
+
+                <h3>Cita-cita</h3>
+                <p>Menjadi programmer profesional.</p>
+
+                <a href="index.html" class="kembali">
+                    ← Kembali ke Halaman Utama
+                </a>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
